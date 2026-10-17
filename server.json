@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.contactlint/contactlint",
+  "title": "ContactLint",
+  "description": "Validate emails (syntax, MX, disposable, role, typo) and phone numbers before your agent saves them.",
+  "version": "1.0.0",
+  "websiteUrl": "https://contactlint.com/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://contactlint.com/mcp",
+      "headers": [
+        { "name": "Authorization", "description": "Bearer token: your ContactLint API key (free at https://contactlint.com/signup)", "isRequired": true, "isSecret": true }
+      ]
+    }
+  ]
+}

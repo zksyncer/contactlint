@@ -1,0 +1,7 @@
+{
+  "type": "object",
+  "properties": {
+    "apiKey": { "type": "string", "description": "ContactLint API key, sent as Authorization: Bearer <apiKey>" }
+  },
+  "required": ["apiKey"]
+}
