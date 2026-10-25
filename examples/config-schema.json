@@ -1,7 +1,10 @@
 {
   "type": "object",
   "properties": {
-    "apiKey": { "type": "string", "description": "ContactLint API key, sent as Authorization: Bearer <apiKey>" }
+    "CONTACTLINT_API_KEY": {
+      "type": "string",
+      "description": "ContactLint API key (free at https://contactlint.com/signup), read from the CONTACTLINT_API_KEY secret environment variable"
+    }
   },
-  "required": ["apiKey"]
+  "required": ["CONTACTLINT_API_KEY"]
 }

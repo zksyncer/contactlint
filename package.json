@@ -1,0 +1,39 @@
+{
+  "name": "contactlint-mcp",
+  "version": "1.1.0",
+  "description": "Local stdio MCP server and bridge for ContactLint email and phone validation (https://contactlint.com/mcp)",
+  "type": "module",
+  "main": "./bin/contactlint-mcp.mjs",
+  "bin": {
+    "contactlint-mcp": "./bin/contactlint-mcp.mjs"
+  },
+  "files": [
+    "bin/",
+    "examples/",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node ./bin/contactlint-mcp.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "email-validation",
+    "phone-validation",
+    "disposable-email",
+    "contactlint"
+  ],
+  "homepage": "https://contactlint.com/email-validation-mcp-server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zksyncer/contactlint.git"
+  },
+  "author": "ContactLint",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
